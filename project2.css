@@ -1,0 +1,289 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+}
+
+#navbar2 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+}
+
+/* Navigation Bar Logo and image */
+#logo {
+    margin: -28px -4px;
+}
+
+#logo img {
+    height: 64px;
+    margin: 36px 26px;
+}
+
+/* Navigation Bar List styling */
+#navbar::before {
+    content: "";
+    background-color: #2A3990;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar2::before {
+    content: "";
+    background-color: #fa71ff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#navbar ul li a{
+    display: block;
+    position: relative;
+    left: 370px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+ul li a {
+    display: block;
+    padding: 3px 39px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #ffffff;
+}
+
+ul li a:hover {
+    color: white;
+    background-color: rgb(78, 119, 233);
+}
+.name{
+    font-family: 'Nerko One', cursive;
+    position: absolute;
+    left: 110px;
+    top: 10px;
+    display: inline-block;
+    width: 235px;
+    font-size: 50px;
+    font-family: 'Rubik Microbe', cursive;
+    color: whitesmoke;
+
+}
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 384px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../bg13.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 89%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.80;
+    /* height: 439px; */
+    top: 84px;
+}
+
+#home h1 {
+    color: rgb(34 1 78);
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Nerko One', cursive;
+}
+
+#home p {
+    color: #140c0c;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Nerko One', cursive;
+}
+
+/* Services section */
+
+
+
+#services {
+    margin: 1px;
+    display: flex;
+   
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 13px;
+    margin: 189px 29px;
+    border-radius: 23px;
+    background: #cbcbcb;
+
+}
+
+#services .box img {
+    height: 183px;
+    width: 171px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Nerko One', cursive;
+}
+/* contact section */
+#contact{
+    height: 575px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../bg9.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    border: 2px solid skyblue;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Nerko One', cursive;
+   
+}
+footer{
+    background: #140c0c;
+    color: #ffffff;
+    padding: 9px 20px;
+}
+/* client section */
+#clientsection {
+    height: 344px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+    padding: 42px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 21px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+}
+#clients img{
+    height: 160px;
+}
+#clientsection{
+    background :#82aeff;
+    height: 50%;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 7px;
+}
+
+.h-secondarycenter {
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 7px;
+}
+
+.h-primarycenter {
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    position: relative;
+    top: 3.2em;
+    font-size: 2.8rem;
+    /* padding: 10px; */
+}
+.h-primarycen{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    
+    /* top: 3.2em; */
+    font-size: 2.8rem;
+    /* padding: 10px; */
+}
+.h-primarycent{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    
+    /* top: 3.2em; */
+    font-size: 2.8rem;
+    /* padding: 10px; */
+}
+.btn {
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: #54baf1;
+    color: white;
+    margin: 2px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #0d2042;
+    border: 2px solid rgb(21, 129, 192);
+}
+
+.center {
+    text-align: center;
+}
+
+.social {
+    right: 33px;
+    display: block;
+    position: absolute;
+}
